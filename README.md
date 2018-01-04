@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #1-led
 **This app allows you to control an LED**
 
@@ -77,3 +78,6 @@ If you press **Click me!** the LED should turn on!!!
 <img src="./assets/screenshot.png" width="500">
 
 **Congrats!** Check out the next example [2-switch](https://github.com/sofroniewn/electron-johnny-five-examples/tree/master/2-switch)
+=======
+# tura_app
+Tura Arduino App repo
