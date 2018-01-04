@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body
+{
+font-family: 'Open Sans', sans-serif;
+font-size: 14px;
+}
+
+#container
+{
+	margin: 0 auto;
+	width: 400px;
+
+}
+
+h1
+{
+	font-family: 'Fira Sans Extra Condensed', sans-serif;
+	font-size: 32px;
+	text-align: center;
+}
+
+
+#container circle
+{
+	fill: #06994D;
+}
