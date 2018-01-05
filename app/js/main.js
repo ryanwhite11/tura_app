@@ -4,6 +4,9 @@ var five = require('johnny-five')
 var fahrenheit = document.querySelector('#fahrenheit')
 var celsius = document.querySelector('#celsius')
 var light = document.querySelector('#light')
+var temperatureC;
+var temperatureF;
+var lux;
 
 util.inherits(MyStream, Readable)  
 function MyStream(opt) {  
@@ -51,6 +54,12 @@ board.on("ready", function(){
 		    console.log(status);
 		  }
 
+		  var luxPercent = ((lux / 1000) * 100);
+		  var rp1 = radialProgress(document.getElementById('div1'))
+	            .diameter(200)
+	            .value(luxPercent)
+	            .render();
+
 		light.innerHTML = lux + "lux | " + status;
 
 
@@ -67,16 +76,27 @@ board.on("ready", function(){
 		//console.log("Temperature = " + this.value);
 		var voltage = this.value * 5;
 		var voltage = voltage/=1024;
-		var temperatureC = (voltage - 0.5) * 10;
-		var temperatureC = temperatureC.toFixed(0);
+		temperatureC = (voltage - 0.5) * 10;
+		temperatureC = temperatureC.toFixed(0);
 		//console.log("Celsius - " + temperatureC.toFixed(0));
 		celsius.innerHTML = temperatureC + "ºC";
 
-		var temperatureF = (temperatureC * 9.0 / 5.0) + 32.0;
-		var temperatureF = temperatureF.toFixed(0);
+		temperatureF = (temperatureC * 9.0 / 5.0) + 32.0;
+		temperatureF = temperatureF.toFixed(0);
 		fahrenheit.innerHTML = temperatureF + "ºF";
 		//console.log("Farenheit - " + temperatureF.toFixed(0));
+
+		// tempPercent = console.log((temperatureC/25)*100);
+		var tempPercent = ((temperatureC / 25) * 100);
+		// console.log(parseInt(tempPercent));
+		var rp2 = radialProgress(document.getElementById('div2'))
+	            .diameter(200)
+	            .value(tempPercent)
+	            .render();
 	});
 
+	
 
 });
+
+

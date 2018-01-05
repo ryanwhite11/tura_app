@@ -26,3 +26,48 @@ h1
 {
 	fill: #06994D;
 }
+
+
+#div1, #div2, #div3, #div4 {
+    width: 33%;
+    height: 200px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.arc {
+    stroke-weight:0.1;
+    fill: #B9CEDC;
+}
+
+#div2 .arc {
+    stroke-weight: 0.1;
+    fill: #E4D1CB;
+}
+
+
+#div3 .arc {
+    stroke-weight: 0.1;
+    fill: #98B99F;
+}
+
+.component {
+    fill: #e1e1e1;
+}
+
+.label {
+    font-family:  Myriad, "Helvetic Neue", Helvetica, Arial;
+    text-anchor: middle;
+}
+
+
+#outer{
+   margin-top:40px; 
+   padding:10px;
+}
+
+#main{
+    width:600px; 
+    height:200px; 
+    margin: 0px auto;
+}
