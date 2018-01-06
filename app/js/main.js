@@ -4,8 +4,6 @@ var five = require('johnny-five')
 var fahrenheit = document.querySelector('#fahrenheit')
 var celsius = document.querySelector('#celsius')
 var light = document.querySelector('#light')
-var water = document.querySelector('#water')
-var buttons = document.querySelectorAll('#dataMenu a')
 var temperatureC;
 var temperatureF;
 var lux;
@@ -87,6 +85,7 @@ board.on("ready", function fireGraphs(){
 		pin: "A0",
 		freq: 250, 
 		threshold: 10
+
 	});
 
 
@@ -117,6 +116,7 @@ board.on("ready", function fireGraphs(){
 
 		  var luxPercent = ((lux / 1000) * 100);
 		  var rp1 = radialProgress(document.querySelector('.graphDiv2'))
+
 	            .diameter(200)
 	            .value(luxPercent)
 	            .render();
@@ -126,12 +126,14 @@ board.on("ready", function fireGraphs(){
         lightLevel.innerHTML=lux;
 
 
+
 	});
 
 	var tempSensor = new five.Sensor({
 		pin: "A1",
 		freq: 500, 
 		threshold: 2 
+
 	});
 
 
@@ -197,6 +199,7 @@ board.on("ready", function fireGraphs(){
 	for (var i = 0; i <buttons.length; i++) {
 		buttons[i].addEventListener("click", switchData, false);
 	}
+
 
 });
 
