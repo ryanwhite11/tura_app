@@ -1,0 +1,494 @@
+@font-face {
+  font-family: 'LibreBaskerville-Regular';
+  src: url("../fonts/LibreBaskerville-Regular.eot");
+  src: url("../fonts/LibreBaskerville-Regular.woff2") format("woff2"), url("../fonts/LibreBaskerville-Regular.woff") format("woff"), url("../fonts/LibreBaskerville-Regular.ttf") format("truetype"), url("../fonts/LibreBaskerville-Regular.svg#LibreBaskerville-Regular") format("svg"), url("../fonts/LibreBaskerville-Regular.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LibreBaskerville-Bold';
+  src: url("../fonts/LibreBaskerville-Bold.eot");
+  src: url("../fonts/LibreBaskerville-Bold.woff2") format("woff2"), url("../fonts/LibreBaskerville-Bold.woff") format("woff"), url("../fonts/LibreBaskerville-Bold.ttf") format("truetype"), url("../fonts/LibreBaskerville-Bold.svg#LibreBaskerville-Bold") format("svg"), url("../fonts/LibreBaskerville-Bold.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Arial';
+  src: url("../fonts/Arial.eot");
+  src: url("../fonts/Arial.woff2") format("woff2"), url("../fonts/Arial.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Arial Bold';
+  src: url("../fonts/Arial Bold.eot");
+  src: url("../fonts/Arial Bold.woff2") format("woff2"), url("../fonts/Arial Bold.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HKGrotesk-Regular';
+  src: url("../fonts/HKGrotesk-Regular.eot");
+  src: url("../fonts/HKGrotesk-Regular.woff2") format("woff2"), url("../fonts/HKGrotesk-Regular.woff") format("woff"), url("../fonts/HKGrotesk-Regular.ttf") format("truetype"), url("../fonts/HKGrotesk-Regular.svg#HKGrotesk-Regular") format("svg"), url("../fonts/HKGrotesk-Regular.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HKGrotesk-SemiBold';
+  src: url("../fonts/HKGrotesk-SemiBold.eot");
+  src: url("../fonts/HKGrotesk-SemiBold.woff2") format("woff2"), url("../fonts/HKGrotesk-SemiBold.woff") format("woff"), url("../fonts/HKGrotesk-SemiBold.ttf") format("truetype"), url("../fonts/HKGrotesk-SemiBold.svg#HKGrotesk-SemiBold") format("svg"), url("../fonts/HKGrotesk-SemiBold.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+h2 {
+  font-family: 'Arial';
+  text-transform: uppercase;
+  line-height: 25px;
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  margin: 0px;
+}
+
+h3 {
+  font-family: "LibreBaskerville-Regular";
+  margin: 0px;
+  text-transform: none !important;
+}
+
+.hide {
+  display: none;
+}
+
+#div1, #div2, #div3, #div4 {
+  width: 100%;
+}
+
+.arc {
+  stroke-weight: 0.1;
+}
+
+.level {
+  margin-top: 20px;
+}
+
+#waterData .arc {
+  fill: #B9CEDC;
+}
+#waterData h3, #waterData .level {
+  color: #B9CEDC;
+}
+
+#lightData .arc {
+  fill: #E4D1CB;
+}
+#lightData h3, #lightData .level {
+  color: #e4d1cb;
+}
+
+#tempData .arc {
+  fill: #98B99F;
+}
+#tempData h3, #tempData .level {
+  color: #9FB59E;
+}
+
+.component {
+  fill: #e1e1e1;
+}
+
+.label {
+  text-anchor: middle;
+  opacity: 0.3;
+}
+
+#main {
+  width: 600px;
+  height: 200px;
+  margin: 0px auto;
+}
+
+#appHeader {
+  background-color: #697769;
+}
+
+#topBar {
+  border-bottom: solid 1.5px rgba(225, 225, 225, 0.3);
+  padding: 20px;
+  height: 60px;
+}
+#topBar h2 {
+  color: #fff;
+  float: left;
+}
+#topBar img {
+  float: right;
+  margin-left: 20px;
+}
+#topBar #settingsIcon {
+  width: 25px;
+}
+#topBar #userIcon {
+  width: 30px;
+}
+
+#logo h3 {
+  color: #fff;
+  font-size: 55px;
+  letter-spacing: 12px;
+  clear: both;
+  display: block;
+  text-align: center;
+  padding: 40px 0;
+}
+
+#plantImgCon {
+  padding: 0px;
+}
+
+#plantImg {
+  width: 100%;
+}
+
+#plantDetails {
+  background-color: #9FB59E;
+  padding: 20px;
+}
+
+.label {
+  color: #697769;
+  margin-bottom: 0px;
+}
+
+.field {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#age {
+  margin-bottom: 0px;
+}
+
+#edit, #add {
+  color: #697769;
+  float: right;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+#editIcon {
+  width: 25px;
+  float: right;
+  margin-right: 10px;
+}
+
+#addCon {
+  width: 100%;
+  float: right;
+  margin: 20px 0;
+}
+
+#add {
+  float: right;
+}
+
+#addIcon {
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-right: 15px;
+}
+
+#welcome {
+  padding: 20px;
+}
+#welcome h3, #welcome p {
+  color: #697769;
+}
+#welcome h3 {
+  padding-bottom: 20px;
+}
+
+#plantData {
+  padding: 10px;
+}
+
+#dataMenu {
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: center;
+}
+#dataMenu .active h2 {
+  font-weight: 900;
+  opacity: 0.7;
+}
+#dataMenu a {
+  display: inline-block;
+  margin-right: 40px;
+}
+#dataMenu a:active, #dataMenu a:hover {
+  text-decoration: none;
+}
+#dataMenu a:last-child {
+  margin-right: 0px;
+}
+
+.message {
+  opacity: 0.7;
+}
+
+.dataMenuItem {
+  color: #000;
+  opacity: 0.3;
+  font-size: 14px;
+}
+
+.dataCon {
+  text-align: center;
+  padding-bottom: 100px;
+}
+.dataCon h3 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+#graph {
+  width: 60%;
+  margin: 30px 0;
+}
+
+#moisture {
+  color: #B9CEDC;
+  font-size: 20px;
+}
+
+#mobileData h3 {
+  color: #B9CEDC;
+}
+#mobileData .arc {
+  fill: #B9CEDC;
+}
+
+#mainFooter {
+  padding: 60px 0;
+  background: #272a27;
+  margin-bottom: 0px;
+}
+#mainFooter h2, #mainFooter h3, #mainFooter p, #mainFooter a {
+  color: #fff;
+}
+#mainFooter h2 {
+  padding-bottom: 15px;
+  border-bottom: 2px solid #3b3e3b;
+  margin-bottom: 25px;
+}
+
+#footerSm {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+#footerSm a {
+  font-size: 1.75rem;
+}
+
+.footerInfoCon {
+  margin-top: 60px;
+}
+
+.footerInfoCon:first-child {
+  margin-top: 0px;
+}
+
+#footerNav ul li {
+  margin-bottom: 16px;
+}
+#footerNav ul li a {
+  font-family: "Arial";
+  text-decoration: none;
+}
+
+#copyright {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#subscribeButtonCon {
+  overflow: hidden;
+  margin-top: 20px;
+  display: block;
+  width: 225px;
+}
+
+#subscribeInput {
+  border-radius: 25px 0 0 25px;
+  border: none;
+  height: 30px;
+  padding: 0px 10px;
+  margin: 0px;
+  width: 175px;
+  display: block;
+  float: left;
+}
+
+#subscribeInput:focus, #subscribeInput:active {
+  outline: none;
+}
+
+#subscribeButt {
+  margin: 0px;
+  padding: 0;
+  display: block;
+  float: left;
+}
+#subscribeButt button {
+  height: 30px;
+  width: 50px;
+  color: #fff;
+  text-align: center;
+  background: #697769;
+  border-radius: 0 25px 25px 0;
+  border: none;
+  font-family: "Arial Bold";
+  font-size: 14px;
+  letter-spacing: 0.025em;
+}
+#subscribeButt button:active, #subscribeButt button:focus {
+  outline: none;
+  opacity: 0.5;
+}
+
+@media all and (min-width: 768px) {
+  #appHeader {
+    background-color: #697769;
+    width: 100%;
+    height: 100px;
+    padding: 22px 40px;
+    position: relative;
+  }
+
+  #topBar {
+    border-bottom: solid 1.5px rgba(225, 225, 225, 0);
+    width: 300px;
+    float: right;
+    padding: 0 40px 0 0px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  #topBar h2 {
+    padding-top: 5px;
+  }
+
+  #logo {
+    width: 60%;
+    float: left;
+  }
+  #logo h3 {
+    padding: 0px;
+    text-align: left;
+  }
+
+  #plantDetails {
+    padding: 30px;
+  }
+  #plantDetails p {
+    line-height: 25px;
+  }
+
+  .dataCon {
+    padding-bottom: 0px;
+  }
+
+  #addCon {
+    margin: 0px;
+  }
+
+  #welcome {
+    padding: 40px;
+  }
+
+  #dataRow {
+    padding: 0 40px;
+  }
+
+  #subscribeButtonCon {
+    width: 160px;
+  }
+
+  #subscribeInput {
+    width: 110px;
+  }
+
+  .footerInfoCon {
+    margin-top: 0px;
+    padding: 0 40px;
+  }
+
+  #subscribeInput {
+    width: 90px;
+  }
+
+  #copyright {
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  #landingLogo {
+    max-width: 300px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #plantDetails {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  #welcome h3 {
+    width: 100%;
+  }
+
+  #welcomeIntro {
+    max-width: 700px;
+  }
+
+  #footerSm {
+    max-width: 170px;
+  }
+  #footerSm a {
+    transition: 0.3s;
+  }
+  #footerSm a:hover {
+    transition: 0.3s;
+    color: #697769;
+  }
+
+  #footerNav ul li a {
+    transition: 0.3s;
+  }
+  #footerNav ul li a:hover {
+    transition: 0.3s;
+    color: #697769;
+  }
+
+  #subscribeButtonCon {
+    width: 220px;
+  }
+
+  #subscribeInput {
+    width: 170px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

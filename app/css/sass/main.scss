@@ -1,0 +1,512 @@
+@import 'fonts';
+
+$black: #272a27;
+$white: #fff;
+$green: #697769;
+$lightGreen: #9FB59E;
+$darkGreen: #3b3e3b;
+$red: #e4d1cb;
+$blue: #B9CEDC;
+$arial: 'Arial';
+$arialBold: 'Arial Bold';
+$hkReg: 'HKGrotesk-Regular';
+$hkBold: 'HKGrotesk-SemiBold';
+$libreReg: 'LibreBaskerville-Regular';
+$libreBold: 'LibreBaskerville-Bold';
+
+h2{
+  font-family: 'Arial';
+  text-transform: uppercase;
+  line-height: 25px;
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  margin: 0px;
+}
+
+h3{
+  font-family: $libreReg;
+  margin: 0px;
+  text-transform: none !important;
+}
+
+.hide{
+  display: none;
+}
+
+//APP
+#div1, #div2, #div3, #div4 {
+    width: 100%;
+}
+.arc{
+  stroke-weight: 0.1;
+}
+
+.level{
+  margin-top: 20px;
+}
+#waterData{
+  .arc{
+    fill: #B9CEDC;
+  }
+  h3,.level{
+    color: $blue;
+  }
+
+}
+
+#lightData{
+  .arc{
+    fill: #E4D1CB;
+  }
+  h3,.level{
+    color: $red;
+  }
+}
+
+#tempData{
+  .arc{
+    fill: #98B99F;
+  }
+  h3,.level{
+    color: $lightGreen;
+  }
+}
+
+.component {
+    fill: #e1e1e1;
+}
+
+.label {
+    text-anchor: middle;
+    opacity: 0.3;
+}
+
+
+#main{
+    width:600px; 
+    height:200px; 
+    margin: 0px auto;
+}
+
+#appHeader{
+  background-color: $green;
+}
+
+#topBar{
+  border-bottom: solid 1.5px rgba(225,225,225, 0.3);
+  padding: 20px;
+  height: 60px;
+  
+  h2{
+    color: $white;
+    float: left;
+  } 
+
+  img{
+    float: right;
+    margin-left: 20px;
+  }
+
+  #settingsIcon{
+  width: 25px;
+  }
+
+  #userIcon{
+  width: 30px;
+  }
+}
+
+#logo{
+  h3{
+    color: $white;
+    font-size: 55px;
+    letter-spacing: 12px;
+    clear: both;
+    display: block;
+    text-align: center;
+    padding: 40px 0;
+  }
+}
+
+#plantImgCon{
+  padding: 0px;
+}
+
+#plantImg{
+  width: 100%;
+}
+
+#plantDetails{
+  background-color: $lightGreen;
+  padding: 20px;
+}
+
+
+.label{
+  color: $green;
+  margin-bottom: 0px;
+}
+
+.field{
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#age{
+  margin-bottom: 0px;
+}
+
+#edit, #add{
+  color: $green;
+  float: right;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+#editIcon{
+  width: 25px;
+  float: right;
+  margin-right: 10px;
+}
+
+#addCon{
+  width: 100%;
+  float: right;
+  margin: 20px 0;
+} 
+
+#add
+{
+  float: right;
+}
+
+#addIcon{
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-right: 15px;
+}
+
+
+#welcome{
+  padding: 20px;
+  h3,p{
+  color: $green;
+  }
+
+  h3{
+    padding-bottom: 20px;
+  }
+}
+
+
+#plantData{
+  padding: 10px;
+}
+
+#dataMenu{
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: center;
+
+  .active{
+    h2{
+      font-weight: 900;
+      opacity: 0.7;
+    }
+  }
+  
+  a{
+      display: inline-block;
+      margin-right: 40px;
+  }
+  a:active,a:hover{
+    text-decoration: none;
+  }
+
+  a:last-child{
+    margin-right: 0px;
+  }
+}
+
+.message{
+  opacity: 0.7;
+}
+
+.dataMenuItem{
+    color: #000;
+    opacity: 0.3;
+    font-size: 14px;
+  }
+
+.dataCon{
+  text-align: center;
+  padding-bottom: 100px;
+
+  h3{
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+}
+
+#graph{
+  width: 60%;
+  margin: 30px 0;
+}
+
+#moisture{
+    color: #B9CEDC;
+    font-size: 20px;
+}
+#mobileData{
+  h3{
+    color: $blue;
+  }
+
+  .arc{
+    fill: $blue;
+  }
+
+}
+
+//FOOTER
+// FOOTER
+#mainFooter{
+  padding: 60px 0;
+  background: $black;
+  margin-bottom: 0px;
+
+  h2,h3,p,a{
+    color: $white;
+  }
+
+  h2{
+    padding-bottom: 15px;
+    border-bottom: 2px solid $darkGreen;
+    margin-bottom: 25px;
+  }
+}
+
+#footerSm{
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  a{
+    font-size: 1.75rem;
+  }
+}
+
+.footerInfoCon{
+  margin-top: 60px;
+}
+
+.footerInfoCon:first-child{
+  margin-top: 0px;
+}
+
+#footerNav{
+  ul li{
+    margin-bottom: 16px;
+    a{
+      font-family: $arial;
+      text-decoration: none;
+    }
+  } 
+}
+
+#copyright{
+  margin-top: 50px;
+  text-align: center;
+
+}
+
+#subscribeButtonCon{
+  overflow: hidden;
+  margin-top: 20px;
+  display: block;
+  width: 225px;
+}
+
+#subscribeInput{
+  border-radius:  25px 0 0 25px;
+  border: none;
+  height: 30px;
+  padding: 0px 10px;
+  margin: 0px;
+  width: 175px;
+  display: block;
+  float: left;
+}
+#subscribeInput:focus,#subscribeInput:active{
+  outline: none;
+}
+
+#subscribeButt{
+  margin: 0px;
+  padding: 0;
+  display: block;
+  float: left;
+
+  button{
+    height: 30px;
+    width: 50px;
+    color: $white;
+    text-align: center;
+    background: $green;
+    border-radius: 0 25px 25px 0;
+    border: none;
+    font-family: $arialBold;
+    font-size: 14px;
+    letter-spacing: 0.025em;
+  }
+  button:active,button:focus{
+    outline: none;
+    opacity: 0.5;
+  }
+}
+
+
+@media all and (min-width: 768px){ 
+
+  #appHeader{
+    background-color: $green;
+    width: 100%;
+    height: 100px;
+    padding: 22px 40px;
+    position: relative;
+  }
+
+  #topBar{
+  border-bottom: solid 1.5px rgba(225,225,225, 0);
+  width: 300px;
+  float: right;
+  padding: 0 40px 0 0px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  h2{
+    padding-top: 5px;
+  }
+  }
+
+  #logo{
+    width: 60%;
+    float: left;
+
+    h3{
+      padding: 0px;
+    text-align: left;
+
+    }
+  }
+
+  #plantDetails{
+    padding: 30px;
+
+    p{
+      line-height: 25px;
+    }
+  }
+
+  .dataCon{
+     padding-bottom: 0px;
+  }
+
+  #addCon{
+    margin: 0px;
+  }
+
+  #welcome{
+    padding: 40px;
+  }
+  #dataRow{
+    padding: 0 40px;
+  }
+  //FOOTER
+  #subscribeButtonCon{
+    width: 160px;
+  }
+  #subscribeInput{
+    width: 110px
+  }
+//FOOTER
+  .footerInfoCon{
+    margin-top: 0px;
+    padding: 0 40px;
+  }
+
+  #subscribeInput{
+    width: 90px;
+  }
+
+  #copyright{
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  #landingLogo{
+    max-width: 300px;
+  }
+
+}
+
+@media screen and (min-width: 992px){
+  #plantDetails{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  #welcome{
+    h3{
+      width: 100%;
+    }
+  }
+
+  #welcomeIntro{
+      max-width: 700px;
+  }
+  //FOOTER
+  #footerSm{
+    max-width: 170px;
+
+    a{
+      transition: 0.3s;
+    }
+
+    a:hover{
+      transition: 0.3s;
+      color: $green;
+    }
+  }
+  #footerNav {
+    ul li a{
+      transition: 0.3s;
+    }
+    ul li a:hover{
+      transition: 0.3s;
+      color: $green;
+    }
+  }
+
+  #subscribeButtonCon{
+    width: 220px;
+  }
+  #subscribeInput{
+    width: 170px
+  }
+
+}
+

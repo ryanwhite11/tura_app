@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tura Plant Monitoring System</title>
+	
+	<script src="https://use.fontawesome.com/8fc58092e5.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+	<script src="js/d3.min.js"></script>
+	<script src="js/radialProgress.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<header id="appHeader">
+        <h2 class="hide">App Header</h2>
+        
+       <div id="topBar">
+           <h2>Hello, Ryan</h2>
+           <img src="img/userIcon.svg" alt="user Icon" id="userIcon">
+           <img src="img/settingsIcon.svg" alt="settings Icon" id="settingsIcon">
+       </div>
+
+       <div id="logo">
+        <h3>tura</h3>
+       </div>
+
+</header>
+
+
+<section id="mainCon" class="container-fluid">
+	
+<div class="row">
+		
+    <div id="plantInfo" class="col-12 col-xl-3 justify-content-center">
+	<div class="row">
+        <div id="plantImgCon" class="col-12 col-md-7 col-xl-12">
+            <img src="img/planty.jpg" id="plantImg">
+        </div>
+
+        <div id="plantDetails" class="col-12 col-md-5 col-xl-12">
+            <div class="centerBox">
+            <p id="edit">Edit</p>
+            <img src="img/editIcon.svg" alt="edit Icon" id="editIcon">
+            <p class="label">Name</p>
+            <h3 class="field">Planty</h3>
+
+            <p class="label">Plant Type</p>
+            <p class="field">Hydrangea</p>
+
+            <p class="label">Loction</p>
+            <p class="field">Living Room</p>
+
+            <p class="label">Age</p>
+            <p class="field" id="age">26 Days Old</p>
+        </div>
+            
+        </div>
+    </div>
+    </div>
+
+	<div class="col-12 col-xl-9">
+	    <div id="welcome" class="row">
+	        <div id="addCon">
+	            <p id="add">Add Plant</p>
+	            <img src="img/addIcon.svg" alt="add Icon" id="addIcon">
+	        </div>
+
+	        <h3>Welcome, Ryan</h3>
+	        <p id="welcomeIntro">This is your personal tura account. Here you can view all the information you need to make sure your plants are getting everything they need for optimal growth.</p>    
+	    </div>
+
+		<div id="dataRow">
+	    <div id="plantData" class="row">
+	        <div id="dataMenu" class="d-md-none">
+	            <a href="#/" class="active" id="dataSwitch0"><h2 class="dataMenuItem">Water</h2></a>
+	            <a href="#/" id="dataSwitch1"><h2 class="dataMenuItem">Light</h2></a>
+	            <a href="#/" id="dataSwitch2"><h2 class="dataMenuItem">Temp</h2></a>
+	        </div>
+
+	        <div class="dataCon d-md-block col-12 col-md-4" id="waterData">
+	            <div >
+	                <h2 class="dataMenuItem">Water</h2>
+	                <h3>Waiting</h3>
+	                <p class="message">Reading data...</p>
+	                <div class="graphDiv1"></div>
+	                <p class="level"><span></span>% Moist</p>
+	            </div>
+	        </div>
+
+	        <div class="dataCon d-none d-md-block col-12 col-md-4" id="lightData">
+	            <div >
+	                <h2 class="dataMenuItem">Light</h2>
+	                <h3>Waiting</h3>
+	                <p class="message">Reading data...</p>
+	                <div class="graphDiv2"></div>
+	                <p class="level"><span></span> lux</p>
+	            </div>
+	        </div>
+
+	        <div class="dataCon d-none d-md-block  col-12 col-md-4" id="tempData">
+	            <div >
+	                <h2 class="dataMenuItem">Temp</h2>
+	                <h3>Waiting</h3>
+	                <p class="message">Reading data...</p>
+	                <div class="graphDiv3"></div>
+	                <p class="level"><span></span>ºc</p>
+	            </div>
+	        </div>
+	           
+	    </div>
+	    </div>
+    
+	</div>
+
+</div>
+
+</section>
+<footer id="mainFooter">
+<h2 class="hide">Main Footer</h2>
+<div class="container">
+	<div class="row">
+		
+		<div class="col-12 col-sm-4 footerInfoCon">
+			<h2>Connect</h2>
+			<div id="footerSm">
+				<a href="#" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+				<a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+	            <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+	            <a href="#" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+			</div>
+			<p>123 Address St. <br class="d-none d-sm-block">Toronto, ON</p>
+		</div>
+
+		<div class="col-12 col-sm-4 footerInfoCon">
+			<h2>ABOUT</h2>
+			<nav id="footerNav">
+			<h3 class="hide">Footer Navigation</h3>
+				<ul>
+					<li><a href="#">What Is Tura</a></li>
+					<li><a href="#">How Does Tura Work</a></li>
+					<li><a href="#">What Does Tura Do</a></li>
+				</ul>
+			</nav>
+			<h3>tura</h3>
+		</div>
+
+		<div class="col-12 col-sm-4 footerInfoCon">
+			<h2>Subscribe</h2>
+			<p id="updateP">For updates on tura products subscribe below.</p>
+			  <div id="subscribeButtonCon">
+			    <input type="text" id="subscribeInput" placeholder="email" />
+			    <span id="subscribeButt">
+			     <button type="button">GO</button>
+			    </span>
+			  </div>
+			<p id="copyright">&copy; 2017 tura</p>
+		</div>
+		
+	</div>
+</div>
+	
+</footer>
+
+
+<script src="js/main.js"></script>
+<script src="js/charts.js"></script>
+
+</body>
+</html>
+
